@@ -32,35 +32,6 @@ Page({
         merchantsData: objects
       })
     })
-
-    let merchantsData = [
-      {
-        id: 1,
-        title: "二龙山",
-        latitude: 38.01679,
-        longitude: 112.43882,
-        description: "二龙山又名烈石山，西临汾河，地势险要，是太原的北大门。解放战争期间，阎锡山军队在烈石山上修建了大量军事设施，现保存有碉堡3座、地下暗道1处。山势不太高，但是景色秀丽，山上鲜花遍布，景点众多，二龙山旅游风景区是太原为数不多的避暑胜地。",
-        logo:
-        "https://cloud-minapp-11189.cloud.ifanrusercontent.com/1ewNfNmLFhbbAXiO.jpg"
-      },
-      {
-        id: 2,
-        title: "窦大夫祠",
-        latitude: 38.01127,
-        longitude: 112.43963,
-        description: "窦大夫祠又称英济祠、烈石神祠，位于太原市西北20公里的上兰村，在汾河峡谷左侧；北靠二龙山，左傍烈石寒泉，右临赵戴文祠，是祀奉春秋时晋国大夫窦犨（chōu）的祠庙。窦犨，字鸣犊，封地在今太原，曾于狼孟（今阳曲黄寨）开渠兴利，因而得到后人的纪念；宋代元丰八年（1085）神宗封之为英济侯，故祠庙又名英济祠。",
-        logo: "https://cloud-minapp-11189.cloud.ifanrusercontent.com/1etk5sBuiOmYvBlz.jpg"
-      },
-      {
-        id: 3,
-        title: "柏林园",
-        latitude: 38.01304,
-        longitude: 112.44102,
-        description: "柏林园位于中北大学校内，是太原市七所四星级公园之一，西倚二龙山，南临汾河水，毗邻太原名胜窦大夫祠，青山碧水，风景旖旎。",
-        logo: "https://cloud-minapp-11189.cloud.ifanrusercontent.com/1ewPWfeSZGhToKyX.jpg"
-      }
-    ]
-
   },
 
   switchMerchantsItems(e) {
