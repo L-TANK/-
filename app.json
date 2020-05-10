@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lbsIndex/lbsIndex",
+    "pages/lbsDetail/lbsDetail",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#C8141F",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "中北大学校园导览",
+    "enablePullDownRefresh": false
+  },
+
+  "plugins": {
+    "sdkPlugin": {
+      "version": "3.3.0",
+      "provider": "wxc6b86e382a1e3294"
+     }
+  },
+
+  "sitemapLocation": "sitemap.json"
+}

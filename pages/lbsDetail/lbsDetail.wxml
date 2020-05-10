@@ -1,0 +1,19 @@
+<!--pages/lbsDetail/lbsDetail.wxml-->
+<view class="intro">
+    <swiper class="slide" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+          <image src="/resource/images/{{item}}" class="slide-image" />
+        </swiper-item>
+    </swiper>
+    <view class="intro-info padding-leftRight">
+        <view class="intro-title">
+          <view class="intro-title-text">柏林园</view>
+          <image src="../../resource/images/gotomap.png" class="intro-title-logo"></image>
+        </view>
+        <view class="intro-main">
+            柏林园位于中北大学校内，是太原市七所四星级公园之一，西倚二龙山，南临汾河水，毗邻太原名胜窦大夫祠，青山碧水，风景旖旎。公园内有成年柏树数百棵，迎春花、桃花、牡丹花等植物，“龙山飞瀑，柏林冬色”，构成太原八绝，已经成为太原市居民的好去处
+        </view>
+    </view>
+</view>
+

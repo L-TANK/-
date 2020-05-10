@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="flex-row">
+    <view class="flex-item">
+      <navigator url="/pages/about/about" hover-class="none">
+        <image class="about" src="/resource/images/about.png"></image>
+      </navigator>  
+    </view>
+    <view class="flex-item">
+      <navigator url="/pages/lbsIndex/lbsIndex" hover-class="none">
+        <image class="guangguang" src="/resource/images/guangguang.png"></image>
+      </navigator>  
+    </view>
+    <view class="flex-item">
+      <image class="logo" src="/resource/images/logo.png"></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/about/about.wxml-->
+<view class="intro">
+    <swiper class="slide" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+          <image src="/resource/images/{{item}}" class="slide-image" />
+        </swiper-item>
+    </swiper>
+    <image src="/resource/images/map.png" class="intro-title-logo" bindtap="goToMap"></image> 
+    <view class="intro-info padding-leftRight">
+        <view class="intro-title">
+          <view class="intro-title-text">中北大学简介</view>
+          <view class="intro-english-text">North University of China</view>
+        </view>
+        <view class="intro-main">
+            中北大学是一所由山西省人民政府与国家国防科技工业局共建、山西省人民政府管理的多科性教学研究型大学。学校的前身是1941年八路军总司令部在太行抗日根据地创办的我党我军第一所兵工学校——太行工业学校，历经太原机械学院、华北工学院，2004年6月经教育部批准更名为中北大学。
+
+中北大学位于中国历史文化名城——山西省太原市，并在朔州市设有校区。学校总占地2758亩，建筑面积近101万平方米，固定资产总值近22.7亿元，教学科研仪器设备总值7亿元，可利用中外文图书资源360万册，拥有完善的教学和公共服务设施。
+        </view>
+    </view>
+</view>
