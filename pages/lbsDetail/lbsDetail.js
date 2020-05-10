@@ -1,4 +1,6 @@
 // pages/lbsDetail/lbsDetail.js
+//使用require将公共的配置参数代码导入，并用变量config来保存
+var config =  require('../../config/config')
 Page({
 
   /**
@@ -30,7 +32,7 @@ Page({
    var that = this
     let id = options.id;//接受标记点的id
     //通过id获取map表中的标记点信息
-    let tableID = 99162
+    let tableID = config.TABLE_ID.MAP
     //通过tableID实例化一个TableObject
     let Map = new wx.BaaS.TableObject(tableID)
     //指定recordID

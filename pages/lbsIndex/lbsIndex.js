@@ -1,4 +1,6 @@
 // pages/lbsIndex/lbsIndex.js
+//使用require将公共的配置参数代码导入，并用变量config来保存
+var config =  require('../../config/config')
 const app = getApp();//获取APP应用实例
 Page({
 
@@ -25,14 +27,14 @@ Page({
     var that = this
     //默认界面为校门
     this.setData({
-      activeCategory: '校门'
+      activeCategory: config.CATEGORY
     })
     //获取分类校门的ID
-    let categoryID = this.data.categoryData.indexOf('校门');
+    let categoryID = this.data.categoryData.indexOf(config.CATEGORY);
     //设置为全局变量
     app.golbalData.categoryID = categoryID
     //加载校门内容
-    this.getCategory('校门',function(res){
+    this.getCategory(config.CATEGORY,function(res){
       var merchantsData = res.data.objects
       that.setData({
         merchantsData: merchantsData
@@ -52,7 +54,7 @@ Page({
   //获取某一分类下所有标记的数据
   getCategory:function(name,cb){
      //实例化tableId,TableObject,query
-     let tableId = 99162
+     let tableId = config.TABLE_ID.MAP
      let Map = new wx.BaaS.TableObject(tableId)
      let query = new wx.BaaS.Query()
      query.in('category', [name])
