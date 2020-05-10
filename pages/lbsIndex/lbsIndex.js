@@ -1,4 +1,5 @@
 // pages/lbsIndex/lbsIndex.js
+const app = getApp();//获取APP应用实例
 Page({
 
   /**
@@ -22,18 +23,25 @@ Page({
    */
   onReady: function () {
     var that = this
+    //默认界面为校门
     this.setData({
       activeCategory: '校门'
     })
-    
+    //获取分类校门的ID
+    let categoryID = this.data.categoryData.indexOf('校门');
+    //设置为全局变量
+    app.golbalData.categoryID = categoryID
+    //加载校门内容
     this.getCategory('校门',function(res){
-      var objects = res.data.objects
+      var merchantsData = res.data.objects
       that.setData({
-        merchantsData: objects
+        merchantsData: merchantsData
       })
+      //设置Markers
+      that.setMarkers(merchantsData);
     })
   },
-
+  //切换下方滚动条是否显示
   switchMerchantsItems(e) {
     this.setData({
       isSpread: !this.data.isSpread
@@ -52,20 +60,48 @@ Page({
      })
   },
 
+  //分类切换时，同步切换内容
   categoryChange:function(e){
     var that = this
     var category = e.currentTarget.dataset.category
     this.setData({
       activeCategory: category
     })
+    //获取分类校门的ID
+    let categoryID = this.data.categoryData.indexOf(category);
+    //设置为全局变量
+    app.golbalData.categoryID = categoryID
+
     this.getCategory(category,function(res){
-      var objects = res.data.objects
+      var merchantsData = res.data.objects
       that.setData({
-        merchantsData: objects
+        merchantsData: merchantsData
       })
+      //设置Markers
+      that.setMarkers(merchantsData);
     })
   },
 
+  //设置该分类下的Markers,在地图上显示标记点的图标
+  setMarkers(merchantsData){
+    let markers = [];
+    let categoryID = app.golbalData.categoryID
+      merchantsData.forEach((item) => {
+        let marker = {
+          id: item.id,
+          latitude: item.latitude,
+          longitude: item.longitude,
+          iconPath: '../../resource/icon/' + categoryID + '@3x.png',
+          width: 32,
+          height: 40
+        }
+        markers.push(marker)
+      })
+
+      this.setData({
+       markers
+      })
+  },
   /**
    * 用户点击右上角分享
    */
