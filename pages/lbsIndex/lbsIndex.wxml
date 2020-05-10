@@ -4,7 +4,7 @@
     <view class="top-lbs__items">
       <scroll-view scroll-x="true">
         <block wx:for="{{ categoryData }}" wx:key="true">
-          <view class="top-list-item" data-cate="{{item}}" bindtap="categoryChange">
+          <view class="top-list-item" data-category="{{item}}" bindtap="categoryChange">
             <view class="top-list-item__title {{ activeCategory == item ? 'active-top-border' : ''}}">{{ item }}</view>
           </view>
         </block>
