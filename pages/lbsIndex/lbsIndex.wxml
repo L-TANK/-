@@ -19,6 +19,7 @@
     scale="{{ scale }}"
     show-location
     markers="{{ markers }}"
+    bindmarkertap="markerTap"
     >
   </map>
   

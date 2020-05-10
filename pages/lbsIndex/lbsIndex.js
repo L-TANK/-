@@ -41,6 +41,7 @@ Page({
       that.setMarkers(merchantsData);
     })
   },
+
   //切换下方滚动条是否显示
   switchMerchantsItems(e) {
     this.setData({
@@ -79,6 +80,29 @@ Page({
       })
       //设置Markers
       that.setMarkers(merchantsData);
+    })
+  },
+
+  //点击图标时切换图标
+  markerTap:function(e){
+    //获取点击的marker的ID
+    let markID = e.markerId;
+    //获取地图上的markers数据
+    let markers = this.data.markers;
+    //获取全局分类数据
+    let categoryID = app.golbalData.categoryID;
+    //遍历所有的markers，相同ID的进行变换
+    markers.forEach(item=>{
+      if(item.id == markID){
+        item.iconPath = "../../resource/icon/" + categoryID + "choosed@3x.png"
+      }
+      else{
+        item.iconPath = "../../resource/icon/" + categoryID + "@3x.png"
+      }
+      //更新地图上的标记点数据
+      this.setData({
+        markers
+      })
     })
   },
 
