@@ -86,14 +86,16 @@ Page({
   //点击图标时切换图标
   markerTap:function(e){
     //获取点击的marker的ID
-    let markID = e.markerId;
+    let markerId = e.markerId;
     //获取地图上的markers数据
     let markers = this.data.markers;
     //获取全局分类数据
     let categoryID = app.golbalData.categoryID;
+    //获取所有标记点的数据
+    let merchantsData = this.data.merchantsData
     //遍历所有的markers，相同ID的进行变换
     markers.forEach(item=>{
-      if(item.id == markID){
+      if(item.id == markerId){
         item.iconPath = "../../resource/icon/" + categoryID + "choosed@3x.png"
       }
       else{
@@ -102,6 +104,17 @@ Page({
       //更新地图上的标记点数据
       this.setData({
         markers
+      })
+      let scrollLeft;
+      //更新底部滚动条位置
+      merchantsData.forEach((item,index)=>{
+        if(item.id == markerId){
+          scrollLeft = index * 100;
+          this.setData({
+            scrollLeft,
+            activeMerchantIndex:index
+          })
+        }
       })
     })
   },
