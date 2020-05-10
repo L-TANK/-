@@ -5,18 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls: ['slide-3.jpg', 'slide-4.jpg'],
+    imgUrls: [],
     indicatorDots: true,
     autoplay: true,
-    interval: 3000 
+    interval: 3000, 
+    title:'',
+    description:'',
+    latitude:'',
+    longitude:'',
   },
 
-  openLocation: function () {
+  openLocation:function(){
     wx.openLocation({
-      latitude: 38.011350,
-      longitude: 112.442990,
-      name: '中北大学',
-      address: '山西省太原市尖草坪区学院路3号'
+      latitude: this.data.latitude,
+      longitude: this.data.longitude,
+      name: this.data.title
     })
   },
 
@@ -24,7 +27,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+   var that = this
+    let id = options.id;//接受标记点的id
+    //通过id获取map表中的标记点信息
+    let tableID = 99162
+    //通过tableID实例化一个TableObject
+    let Map = new wx.BaaS.TableObject(tableID)
+    //指定recordID
+    Map.get(id).then(res =>{
+      //success
+      that.setData({
+        title:res.data.title,
+        description:res.data.description,
+        imgUrls:res.data.image,
+        latitude:res.data.latitude,
+        longitude:res.data.longitude
+      })
+    },err =>{
+      //err
+    })
   },
 
   /**
