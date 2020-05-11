@@ -32,6 +32,16 @@
       <view class="lbs-merchants__toggle iconfont {{ isSpread ? 'icon-spread-down':'icon-spread-up' }}"></view>
     </view>
     <view class="lbs-merchants__items" hidden="{{ !isSpread }}">
+      <scroll-view class='scr' scroll-y="true" style='height:465rpx' scroll-top="{{scrollTop}}">
+        <block wx:for="{{merchantsData}}" wx:key="true" id="item" >    
+        <view class="item {{item.display?'item2':''}}" data-index="{{index}}">
+          <image style='margin-top:2px' class='imageone' src="{{item.logo}}"></image>
+          <text>{{item.title}}</text>
+          <image style='margin-top:2px' data-index="{{index}}" bindtap="openLocation" class='imagetwo' src="../../resource/icon/r.png"></image>
+        </view>     
+        </block> 
+      </scroll-view>
+    <!--
        <scroll-view
         scroll-x="{{ true }}"
         scroll-left="{{ scrollLeft }}"
@@ -45,12 +55,13 @@
             <view
               class="list-item__img {{ index == activeMerchantIndex ? 'active-merchant-border' : ''}}"
               style="background-image: url({{ item.logo }})"
-></view>
+            ></view>
 
-              <view class="list-item__title">{{ item.title }}                 </view>
+            <view class="list-item__title">{{ item.title }} </view>
           </navigator>
         </block>
       </scroll-view>
+      -->
     </view>
   </view>
 </view>

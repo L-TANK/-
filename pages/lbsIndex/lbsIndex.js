@@ -16,8 +16,9 @@ Page({
     markers: [],//标记点
     isSpread: true, //底部可滚动视图区域是否显示，true表示展开，false表示收缩
     scrollLeft: 0,//横向滚动条位置，默认为0
+    scrollTop: 0, //纵向滚动条位置，默认为0
     merchantsData: [],//某一分类下的所有标记点数据
-    activeMerchantIndex:0//当前激活的标记点对应的index索引，默认为0
+    activeMerchantIndex:0,//当前激活的标记点对应的index索引，默认为0
   },
 
   /**
@@ -85,7 +86,7 @@ Page({
     })
   },
 
-  //点击图标时切换图标
+  //点击图标时的触发事件
   markerTap:function(e){
     //获取点击的marker的ID
     let markerId = e.markerId;
@@ -107,14 +108,30 @@ Page({
       this.setData({
         markers
       })
-      let scrollLeft;
-      //更新底部滚动条位置
+      //更新下方选中样式
       merchantsData.forEach((item,index)=>{
         if(item.id == markerId){
-          scrollLeft = index * 100;
+          merchantsData[index].display = true
+        }
+        else{
+          merchantsData[index].display = false
+        }
+      })
+      this.setData({
+        merchantsData
+      })
+
+      let scrollLeft;
+      let scrollTop;
+      //更新滚动条位置
+      merchantsData.forEach((item,index)=>{
+        if(item.id == markerId){
+          scrollLeft = index * 100;//横版
+          scrollTop = index * 56;//竖版
           this.setData({
             scrollLeft,
-            activeMerchantIndex:index
+            activeMerchantIndex:index,
+            scrollTop,
           })
         }
       })
@@ -128,6 +145,7 @@ Page({
       merchantsData.forEach((item) => {
         let marker = {
           id: item.id,
+          title: item.title,
           latitude: item.latitude,
           longitude: item.longitude,
           iconPath: '../../resource/icon/' + categoryID + '@3x.png',
@@ -146,5 +164,15 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  openLocation:function(e){
+    var that = this;
+    var index = e.currentTarget.dataset.index;
+    wx.openLocation({
+      latitude: that.data.markers[index].latitude,
+      longitude: that.data.markers[index].longitude,
+      name: that.data.markers[index].title
+    })
   }
 })
