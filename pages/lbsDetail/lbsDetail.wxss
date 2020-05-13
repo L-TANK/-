@@ -1,4 +1,9 @@
 /* pages/lbsDetail/lbsDetail.wxss */
+@import "../../utils/wxParse/wxParse.wxss";
+.wxParse{
+  padding: 20rpx;
+}
+
 .slide{
   width: 750rpx;
   height: 500rpx; 
@@ -49,3 +54,4 @@
 .audio {
   margin: 0 50rpx 5rpx;
 }
+

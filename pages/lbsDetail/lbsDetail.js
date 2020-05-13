@@ -1,6 +1,7 @@
 // pages/lbsDetail/lbsDetail.js
 //使用require将公共的配置参数代码导入，并用变量config来保存
 var config =  require('../../config/config')
+var WxParse = require('../../utils/wxParse/wxParse.js');
 Page({
 
   /**
@@ -48,9 +49,11 @@ Page({
         audio: res.data.audio,
         detail_logo: res.data.detail_logo
       })
+      WxParse.wxParse('description','html',res.data.description,this)
     },err =>{
       //err
     })
+   
   },
 
   /**
