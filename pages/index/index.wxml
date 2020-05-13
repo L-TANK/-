@@ -2,16 +2,18 @@
   <view class="flex-row">
     <view class="flex-item">
       <navigator url="/pages/about/about" hover-class="none">
-        <image class="about" src="/resource/images/about.png"></image>
+        <image class="about" src="/resource/images/西大简介.png"></image>
       </navigator>  
     </view>
     <view class="flex-item">
       <navigator url="/pages/lbsIndex/lbsIndex" hover-class="none">
-        <image class="guangguang" src="/resource/images/guangguang.png"></image>
+        <image class="guangguang" src="/resource/images/逛逛西大.png"></image>
       </navigator>  
     </view>
     <view class="flex-item">
-      <image class="logo" src="/resource/images/logo.png"></image>
+      <navigator url="/pages/lbsIndex/lbsIndex" hover-class="none">
+        <image class="gonglv" src="/resource/images/西大攻略.png"></image>
+      </navigator>  
     </view>
   </view>
 </view>

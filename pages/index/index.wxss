@@ -1,5 +1,5 @@
 .container{
-  background-image: url(https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jXOhzPgwPR2VXRU.jpg);
+  background-image: url(https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jYn2n3m8VxM1Up4.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
   width: 100%;
@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.about,.guangguang{
+.about,.guangguang,.gonglv{
   width: 140rpx;
   height: 140rpx;
 }
@@ -27,6 +27,11 @@
 }
 
 .guangguang{
+  margin-top: 50rpx;
+}
+
+
+.gonglv{
   margin-top: 50rpx;
 }
 
