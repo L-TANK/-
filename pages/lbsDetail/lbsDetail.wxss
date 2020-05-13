@@ -52,6 +52,6 @@
 }
 
 .audio {
-  margin: 0 50rpx 5rpx;
+  margin: 0 10rpx 5rpx;
 }
 
