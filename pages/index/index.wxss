@@ -1,7 +1,7 @@
 .container{
   background-image: url(https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jYn2n3m8VxM1Up4.jpg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: 100% 100%; 
   width: 100%;
   height: 100%;  
 }
