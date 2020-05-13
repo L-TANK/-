@@ -11,6 +11,8 @@
           <view class="intro-title-text">{{title}}</view>
           <image src="../../resource/images/gotomap.png" class="intro-title-logo" bindtap="openLocation"></image>
         </view>
+        <audio author="" bindtap="audioPlay" class="audio" id="myAudio" name="{{title}}" 
+        poster="{{detail_logo}}" src="{{audio}}" controls></audio>
         <view class="intro-main">
             {{description}}
         </view>

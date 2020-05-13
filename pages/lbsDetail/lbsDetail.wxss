@@ -45,3 +45,7 @@
   color: #464645;
   text-align: justify;
 }
+
+.audio {
+  margin: 0 50rpx 5rpx;
+}

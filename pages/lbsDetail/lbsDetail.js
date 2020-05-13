@@ -15,13 +15,14 @@ Page({
     description:'',
     latitude:'',
     longitude:'',
+    audio:'',
   },
 
   openLocation:function(){
     wx.openLocation({
       latitude: this.data.latitude,
       longitude: this.data.longitude,
-      name: this.data.title
+      name: this.data.title,
     })
   },
 
@@ -43,7 +44,9 @@ Page({
         description:res.data.description,
         imgUrls:res.data.image,
         latitude:res.data.latitude,
-        longitude:res.data.longitude
+        longitude:res.data.longitude,
+        audio: res.data.audio,
+        detail_logo: res.data.detail_logo
       })
     },err =>{
       //err
@@ -100,5 +103,21 @@ Page({
       title: "畅行西大",
       imageUrl: "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jYTYCvcv5eWRkrz.jpg"
     };
-  }
+  },
+
+  audioPlay: function () {
+    this.setData({
+      action: {
+        method: 'play'
+      }
+    });
+  },
+  audioPause: function () {
+    this.setData({
+      action: {
+        method: 'pause'
+      }
+    });
+  },
+
 })
