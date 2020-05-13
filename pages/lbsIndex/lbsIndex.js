@@ -127,7 +127,7 @@ Page({
       merchantsData.forEach((item,index)=>{
         if(item.id == markerId){
           scrollLeft = index * 100;//横版
-          scrollTop = index * 56;//竖版
+          scrollTop = index * 55;//竖版
           this.setData({
             scrollLeft,
             activeMerchantIndex:index,
