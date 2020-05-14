@@ -39,7 +39,7 @@
         <view class="item {{item.display?'item2':''}}" data-index="{{index}}">
           <image style='margin-top:2px' class='imageone' src="{{item.logo}}"></image>
           <text>{{item.title}}</text>
-          <image style='margin-top:2px' data-index="{{index}}" bindtap="openLocation" class='imagetwo' src="../../resource/icon/r.png"></image>
+          <image style='margin-top:10px' data-index="{{index}}" bindtap="openLocation" class='imagetwo' src="../../resource/icon/r.png"></image>
         </view> 
          </navigator> 
         </block> 
