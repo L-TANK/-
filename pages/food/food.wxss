@@ -1,1 +1,110 @@
 /* pages/food/food.wxss */
+.bg {
+    width: 100%;
+    height: auto;
+    top: 0rpx;
+    bottom: 0rpx;
+    left: 0;
+    right: 0;
+    background: url('https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZ4YmhTtChVG6dv.png');
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -666;
+}
+
+.section {
+    text-align: center;
+    background-color: fff;
+    margin-top: 30rpx;
+}
+
+.container_xiuyuan {
+    width: 90%;
+    text-align: center;
+    background:#0000;
+    padding-top: 50rpx;
+    padding-bottom: 10rpx;
+    margin: 50rpx auto;
+    position: relative;
+    border-radius: 20rpx;
+}
+
+.container_xiuyuan {
+    margin-top: 60rpx;
+    text-align: center;
+}
+
+
+.header {
+    width: 115rpx;
+    height: 70rpx;
+    text-align: center;
+    border-radius: 80rpx 80rpx 0 0;
+    background: white;
+    left: 0;
+    right: 0;
+    margin: -70rpx auto auto;
+    position: absolute;
+    z-index: 555;
+}
+
+.header_bowl {
+    width: 72rpx;
+    height: 75rpx;
+    margin-top: 10rpx;
+}
+
+.title {
+    width: 250rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #fff;
+    background: #55e1e3;
+    margin: 20rpx auto 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**------------------ **/
+
+
+
+.slide{
+ width: 600rpx;
+ height: 400rpx;
+ margin: 10rpx auto 25rpx;
+  
+}
+
+.slide-image{
+  width: 600rpx;
+  height: 400rpx;
+  margin: 10rpx auto 25rpx;
+ 
+}
+
+
+.detail {
+    width: 600rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+    font-family: 'YouYuan';
+    text-indent: 2em;
+    margin: 2rpx auto;
+    text-align:justify ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,2 +1,36 @@
 <!--pages/food/food.wxml-->
-<text>pages/food/food.wxml</text>
+<!--<view class="bg"></view>-->
+
+<scroll-view class="section" scrollY="true" style="height: 480px;">
+  <view class="container_xiuyuan">
+    <view class="header">
+      <image class="header_bowl" src="/resource/images/bowl.png"></image>
+    </view>
+    <view class="title">秀苑</view>
+      <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </swiper>
+    <view class="detail">
+      秀苑餐厅位于新东园。该餐厅共有两层楼，一楼是大众食堂，主营是快餐、粉面、粥。二楼是自助餐厅，环境舒适优雅。主要菜肴有小炒、大众美食、粉面粥等，除此之外还提供水果、果汁、杂粮粥。秀苑二楼餐厅相对于翠苑二楼餐厅菜品更丰富亲民，自然价格也经济实惠。
+    </view>
+    <view class ="detail">推荐菜：招牌蒜骨香，客家三宝酿。</view>
+  </view>
+
+
+  <view class="container_nanyuan">
+    <view class="title">南苑</view>
+      <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </swiper>
+    <view class="detail">
+     --------------------
+    </view>
+    <view class ="detail">推荐菜：。</view>
+  </view>
+
+
+</scroll-view>
