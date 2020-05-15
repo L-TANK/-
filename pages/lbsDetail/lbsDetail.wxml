@@ -8,9 +8,9 @@
         </swiper-item>
     </swiper>
     <view class="intro-info padding-leftRight">
+        <image src="../../resource/icon/r.png" class="intro-title-logo" bindtap="openLocation"></image>
         <view class="intro-title">
           <view class="intro-title-text">{{title}}</view>
-          <image src="../../resource/icon/r.png" class="intro-title-logo" bindtap="openLocation"></image>
         </view>
         <audio author="" bindtap="audioPlay" class="audio" id="myAudio" name="{{title}}" 
         poster="{{detail_logo}}" src="{{audio}}" controls></audio>

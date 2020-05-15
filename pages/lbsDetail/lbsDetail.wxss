@@ -35,8 +35,7 @@
 
 .intro-title-logo {
   position: absolute;
-  right: 0;
-  top: 54rpx;
+  top: 400rpx;
   width: 80rpx;
   height: 80rpx;
   border-radius: 50%;
