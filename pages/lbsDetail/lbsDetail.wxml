@@ -10,7 +10,7 @@
     <view class="intro-info padding-leftRight">
         <view class="intro-title">
           <view class="intro-title-text">{{title}}</view>
-          <image src="../../resource/images/gotomap.png" class="intro-title-logo" bindtap="openLocation"></image>
+          <image src="../../resource/icon/r.png" class="intro-title-logo" bindtap="openLocation"></image>
         </view>
         <audio author="" bindtap="audioPlay" class="audio" id="myAudio" name="{{title}}" 
         poster="{{detail_logo}}" src="{{audio}}" controls></audio>
