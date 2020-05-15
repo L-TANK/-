@@ -1,4 +1,5 @@
 // pages/lbsSearch/lbsSearch.js
+var config =  require('../../config/config')
 Page({
 
   /**
@@ -6,6 +7,7 @@ Page({
    */
   data: {
     Input : "",
+    SearchData: [],//搜索结果
   },
 
   /**
@@ -82,7 +84,35 @@ Page({
   },
   // 查询搜索的接口方法
   Search: function () {
+    var that = this
     var Input = this.data.Input
-    console.log(Input)
+    this.getSearch(Input,function(res){
+      var SearchData = res.data.objects
+      that.setData({
+        SearchData: SearchData
+      })    
+    })
   },
+
+  //查询搜索结果
+  getSearch:function(Input,cb){
+    //实例化tableId,TableObject,query
+    let tableId = config.TABLE_ID.MAP
+    let Search = new wx.BaaS.TableObject(tableId)
+    let query = new wx.BaaS.Query()
+    query.contains('title', Input)
+    Search.setQuery(query).find().then(res => cb(res), err => {
+      // err
+    })
+ },
+
+ openLocation:function(e){
+  var that = this;
+  var index = e.currentTarget.dataset.index;
+  wx.openLocation({
+    latitude: that.data.SearchData[index].latitude,
+    longitude: that.data.SearchData[index].longitude,
+    name: that.data.SearchData[index].title
+  })
+},
 })
