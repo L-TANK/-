@@ -90,7 +90,14 @@ Page({
       var SearchData = res.data.objects
       that.setData({
         SearchData: SearchData
-      })    
+      })  
+      if(that.data.SearchData.length==0){
+        wx.showToast({
+          title: '没有找到相关内容!',
+          icon: 'none',
+          duration: 1500
+        })
+      }
     })
   },
 
