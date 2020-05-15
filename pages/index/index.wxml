@@ -11,7 +11,7 @@
       </navigator>  
     </view>
     <view class="flex-item">
-      <navigator url="/pages/lbsIndex/lbsIndex" hover-class="none">
+      <navigator url="/pages/gonglv/gonglv" hover-class="none">
         <image class="gonglv" src="/resource/images/gonglv.png"></image>
       </navigator>  
     </view>
