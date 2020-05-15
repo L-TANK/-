@@ -177,5 +177,19 @@ Page({
       longitude: that.data.markers[index].longitude,
       name: that.data.markers[index].title
     })
-  }
+  },
+
+  getCoreLocation: function() {
+    var that = this;
+    wx.getLocation({
+        type: "gcj02",
+        success: function(e) {
+            var latitude = e.latitude, longitude = e.longitude;
+            that.setData({
+                coreLongitude: longitude,
+                coreLatitude: latitude
+            });
+        }
+    });
+},
 })
