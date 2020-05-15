@@ -24,8 +24,8 @@
   </map>
   
   <cover-view class="cover-img__container {{isSpread?'loacte-record--has':'loacte-record--has-no'}}">
-        <cover-view bindtap="navigateToSearch" class="cover-img_search_container">
-            <cover-image bindtap="tap1" class="cover-img_search" lazyLoad="true" src="../../resource/icon/search.png"></cover-image>
+        <cover-view class="cover-img_search_container">
+            <cover-image bindtap="navigateToSearch" class="cover-img_search" lazyLoad="true" src="../../resource/icon/search.png"></cover-image>
         </cover-view>
         <cover-view class="cover-img_location_container">
             <cover-image bindtap="getCoreLocation" class="cover-img_location" lazyLoad="true" src="../../resource/icon/locate.png"></cover-image>

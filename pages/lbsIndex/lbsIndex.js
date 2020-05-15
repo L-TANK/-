@@ -179,6 +179,12 @@ Page({
     })
   },
 
+  navigateToSearch: function() {
+    wx.navigateTo({
+        url: "../lbsSearch/lbsSearch"
+    });
+  },
+
   getCoreLocation: function() {
     var that = this;
     wx.getLocation({
@@ -191,5 +197,5 @@ Page({
             });
         }
     });
-},
+  },
 })
