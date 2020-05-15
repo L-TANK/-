@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    Input : "",
   },
 
   /**
@@ -50,6 +50,7 @@ Page({
 
   },
 
+
   /**
    * 页面上拉触底事件的处理函数
    */
@@ -65,5 +66,23 @@ Page({
       title: "畅行西大",
       imageUrl: "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jYTYCvcv5eWRkrz.jpg"
     };
-  }
+  },
+
+  //输入框事件
+  Input:function(e){
+    this.setData({
+      Input:e.detail.value
+    })
+  },
+  //清空按钮事件
+  clean_input:function(){
+    this.setData({
+      Input:""
+    })
+  },
+  // 查询搜索的接口方法
+  Search: function () {
+    var Input = this.data.Input
+    console.log(Input)
+  },
 })
