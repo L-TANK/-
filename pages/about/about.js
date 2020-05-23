@@ -18,6 +18,7 @@ Page({
     about:'',
     logo:'',
     audio:'',
+    video_img:'',
   },
  
   goToMap: function () {
@@ -41,7 +42,8 @@ Page({
           englishName: res.data.englishName,
           about:res.data.about,
           logo:res.data.logo,
-          audio:res.data.audio
+          audio:res.data.audio,
+          video_img:res.data.video_img
         })
       WxParse.wxParse('about','html',res.data.about,this) 
       },
@@ -59,7 +61,8 @@ Page({
             englishName: res.data.englishName,
             about:res.data.about,
             logo:res.data.logo,
-            audio:res.data.audio
+            audio:res.data.audio,
+            video_img:res.data.video_img
           })
           WxParse.wxParse('about','html',res.data.about,this)
           //将校园简介数据进行本地缓存
