@@ -1,4 +1,26 @@
 <!--pages/about/about.wxml-->
+<view class="navs_container">
+    <view bindtap="updatenavs" class="nav" data-index="{{index}}" style="{{current==index?'border-bottom: 4px solid #FF0000;':''}}" wx:for="{{navInfo}}">
+    {{item}}
+  </view>
+</view>
+<swiper class="container" current="{{current}}" style="height: {{windowH-CustomBar-5}}px;">
+    <swiper-item class="intro" hidden="{{current!=0}}">
+       <!--intro页面元素-->
+       <video controls class="intro_video" src="{{introvideo}}" object-fit='cover'></video>
+    </swiper-item>
+    <swiper-item class="history" hidden="{{current!=1}}">
+       <!--history页面元素--> 
+    </swiper-item>
+    <swiper-item class="scene" hidden="{{current!=2}}">
+       <!--scene页面元素-->  
+    </swiper-item>
+    <swiper-item class="logo" hidden="{{current!=3}}">
+       <!--logo页面元素-->
+    </swiper-item>
+</swiper>
+
+<!--
 <view class="intro">
     <swiper class="slide" indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}">
@@ -19,3 +41,4 @@
         </view>
     </view>
 </view>
+-->
