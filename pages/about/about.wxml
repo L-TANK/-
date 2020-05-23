@@ -1,4 +1,6 @@
 <!--pages/about/about.wxml-->
+<import src = "../../utils/wxParse/wxParse.wxml" />
+
 <view class="navs_container">
     <view bindtap="updatenavs" class="nav" data-index="{{index}}" style="{{current==index?'border-bottom: 4px solid #FF0000;':''}}" wx:for="{{navInfo}}">
     {{item}}
@@ -6,35 +8,42 @@
 </view>
 <swiper class="container" current="{{current}}" style="height: {{windowH-CustomBar-5}}px;">
     <swiper-item class="intro" hidden="{{current!=0}}">
+    <!--intro页面元素-->
+    <video controls class="intro_video" src="{{introvideo}}" object-fit='cover'></video>
     <view class="intro-info padding-leftRight">
         <view class="intro-title">
           <view class="intro-title-text">{{schoolName}}简介</view>
           <view class="intro-english-text">{{englishName}}</view>
+          <view class = "wxParse">
+            <template is = "wxParse" data = "{{wxParseData:about.nodes}}" />
+          </view>
         </view>
         <view class="intro-main">
             <template is="wxParse" data="{{wxParseData:about.nodes}}" />
         </view>
     </view>
-       <!--intro页面元素-->
-       <video controls class="intro_video" src="{{introvideo}}" object-fit='cover'></video>
+       
     </swiper-item>
     <swiper-item class="history" hidden="{{current!=1}}">
        <!--history页面元素--> 
     </swiper-item>
+    
     <swiper-item class="scene" hidden="{{current!=2}}">
- <scroll-view scroll-y="true" class="scroll-view-y">
-     <view class="intro-title-text">校园荷花池 </view>
-    <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5yJzfN2DoqD.jpg"></image>
-    <view class="intro-title-text">马君武校长 </view>
-     <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu558ivI9IhnH.jpg"></image>
-       <view class="intro-title-text">校园古树 </view>
-     <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5zgLmPc9aZs.jpg"></image> 
-      <view class="intro-title-text">夕阳湖心岛 </view>
-     <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5SamK4PG0iM.jpg"></image>  
-     <view class="intro-title-text">小荷才露尖尖角</view>
-     <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5n7OOAmzkz7.jpg"></image>
-       <!--scene页面元素-->  </scroll-view>
+     <!--scene页面元素-->  
+      <scroll-view scroll-y="true" class="scroll-view-y">
+        <view class="intro-title-text">校园荷花池 </view>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5yJzfN2DoqD.jpg"></image>
+        <view class="intro-title-text">马君武校长 </view>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu558ivI9IhnH.jpg"></image>
+        <view class="intro-title-text">校园古树 </view>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5zgLmPc9aZs.jpg"></image> 
+        <view class="intro-title-text">夕阳湖心岛 </view>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5SamK4PG0iM.jpg"></image>  
+        <view class="intro-title-text">小荷才露尖尖角</view>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5n7OOAmzkz7.jpg"></image>
+      </scroll-view>
     </swiper-item>
+
     <swiper-item class="logo" hidden="{{current!=3}}">
        <!--logo页面元素-->
     </swiper-item>

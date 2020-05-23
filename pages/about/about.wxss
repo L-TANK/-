@@ -1,4 +1,8 @@
 /* pages/about/about.wxss */
+@import "../../utils/wxParse/wxParse.wxss";
+.wxParse{
+  padding: 20rpx;
+}
 
 .navs_container {
   width: 100%;
