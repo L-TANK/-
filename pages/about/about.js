@@ -11,6 +11,9 @@ Page({
     indicatorDots:true,
     autoplay:true,
     interval:3000,
+    navInfo: [ "简介", "历史", "风光" ,"标识"], 
+    current: 0, 
+    introvideo:"https://www.gxu.edu.cn/__local/2/73/CF/A0048789F2E45A1D52D5FA6A34A_E74CCD54_20F8B80B.mp4?e=.mp4", 
     schoolName:'',
     englishName:'',
     about:'',
@@ -127,5 +130,11 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  updatenavs: function(t) { 
+    this.setData({ 
+        current: t.target.dataset.index, 
+    }); 
+}, 
 })
