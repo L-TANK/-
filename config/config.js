@@ -5,5 +5,6 @@ module.exports = {
     MAP: 99162,
     SCHOOL: 99161
   },
+  RECORDID:'5eb76dbadc78475753fc2144',
   CATEGORY:'校门'
 }

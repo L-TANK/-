@@ -16,7 +16,8 @@ Page({
     schoolName:'',
     englishName:'',
     about:'',
-
+    logo:'',
+    audio:'',
   },
  
   goToMap: function () {
@@ -38,14 +39,16 @@ Page({
         that.setData({
           schoolName: res.data.schoolName,
           englishName: res.data.englishName,
-          about:res.data.about
+          about:res.data.about,
+          logo:res.data.logo,
+          audio:res.data.audio
         })
       WxParse.wxParse('about','html',res.data.about,this) 
       },
       fail: () =>{
         // 操作school表
         let tableID =config.TABLE_ID.SCHOOL
-        let recordID ='5eb76dbadc78475753fc2144'
+        let recordID =config.RECORDID
         let School = new wx.BaaS.TableObject(tableID)
 
         School.get(recordID).then(res => {
@@ -54,7 +57,9 @@ Page({
           that.setData({
             schoolName: res.data.schoolName,
             englishName: res.data.englishName,
-            about:res.data.about
+            about:res.data.about,
+            logo:res.data.logo,
+            audio:res.data.audio
           })
           WxParse.wxParse('about','html',res.data.about,this)
           //将校园简介数据进行本地缓存
