@@ -35,7 +35,6 @@ Page({
 
     Room.get(recordID).then(res => {
       // success
-      console.log(res.data)
       this.setData({
         roomName:res.data.roomName,
         imgUrls:res.data.image,
@@ -46,7 +45,6 @@ Page({
 
     Room.get(recordID2).then(res => {
       // success
-      console.log(res.data)
       this.setData({
         roomName2: res.data.roomName,
         imgUrls2: res.data.image,
@@ -57,7 +55,6 @@ Page({
    
     Room.get(recordID3).then(res => {
       // success
-      console.log(res.data)
       this.setData({
         roomName3: res.data.roomName,
         imgUrls3: res.data.image,
@@ -68,7 +65,6 @@ Page({
 
     Room.get(recordID4).then(res => {
       // success
-      console.log(res.data)
       this.setData({
         roomName4: res.data.roomName,
         imgUrls4: res.data.image,
@@ -79,7 +75,6 @@ Page({
 
     Room.get(recordID5).then(res => {
       // success
-      console.log(res.data)
       this.setData({
         roomName5: res.data.roomName,
         imgUrls5: res.data.image,
