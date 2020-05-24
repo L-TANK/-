@@ -21,22 +21,20 @@ Page({
     video_img:'',
     xun:'',
     hui:'',
+    song:'',
     imgList: [
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZqteRMtHNpSzcT.jpg",
-    
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZqteRMtHNpSzcT.jpg",  
     ]
   },
  
- 
-
   preview(event) {
-    console.log(event.currentTarget.dataset.src)
     let currentUrl = event.currentTarget.dataset.src
     wx.previewImage({
       current: currentUrl, // 当前显示图片的http链接
       urls: this.data.imgList // 需要预览的图片http链接列表
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -55,7 +53,8 @@ Page({
           audio:res.data.audio, 
           video_img:res.data.video_img,
           xun:res.data.xun,
-          hui:res.data.hui
+          hui:res.data.hui,
+          song:res.data.song
         }) 
       WxParse.wxParse('about','html',res.data.about,this)  
       WxParse.wxParse('xun','html',res.data.xun,this) 
@@ -78,7 +77,8 @@ Page({
             audio:res.data.audio, 
             video_img:res.data.video_img,
             xun:res.data.xun,
-            hui:res.data.hui
+            hui:res.data.hui,
+            song:res.data.song
           }) 
           WxParse.wxParse('about','html',res.data.about,this) 
           WxParse.wxParse('xun','html',res.data.xun,this) 

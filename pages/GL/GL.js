@@ -1,5 +1,3 @@
-var config = require('../../config/config');
-
 Page({
   /**
    * 页面的初始数据
@@ -37,39 +35,9 @@ Page({
       /**
       *6-25
       */
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     
     ]
   },
  
- 
- 
-  goToMap: function () {
-    wx.navigateTo({
-      url: '/pages/lbsIndex/lbsIndex'
-    })
-  },
   preview(event) {
     console.log(event.currentTarget.dataset.src)
     let currentUrl = event.currentTarget.dataset.src
@@ -83,49 +51,7 @@ Page({
    */
 
   onLoad: function (options) { 
-    var that = this
-    wx.getStorage({
-      key: 'schoolData',
-      success: (res) =>{
-        //更新校园简介数据
-        that.setData({
-          schoolName: res.data.schoolName,
-          englishName: res.data.englishName,
-          about:res.data.about,
-          logo:res.data.logo,
-          audio:res.data.audio,
-          video_img:res.data.video_img
-        })
-      WxParse.wxParse('about','html',res.data.about,this) 
-      },
-      fail: () =>{
-        // 操作school表
-        let tableID =config.TABLE_ID.SCHOOL
-        let recordID =config.RECORDID
-        let School = new wx.BaaS.TableObject(tableID)
-
-        School.get(recordID).then(res => {
-          // success
-          //更新校园简介数据
-          that.setData({
-            schoolName: res.data.schoolName,
-            englishName: res.data.englishName,
-            about:res.data.about,
-            logo:res.data.logo,
-            audio:res.data.audio,
-            video_img:res.data.video_img
-          })
-          WxParse.wxParse('about','html',res.data.about,this)
-          //将校园简介数据进行本地缓存
-          wx.setStorage({
-            key: "schoolData",
-            data: res.data
-          })
-        }, err => {
-          // err
-        })
-      }
-    })
+   
   },
 
     
@@ -175,16 +101,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+    return {
+      title: "畅行西大",
+      imageUrl: "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jYTYCvcv5eWRkrz.jpg"
+    };
   },
-
-  updatenavs: function(t) { 
-    this.setData({ 
-        current: t.target.dataset.index, 
-    }); 
-}, 
-
-catchTouchMove:function(res){
-  return false
-},
 })

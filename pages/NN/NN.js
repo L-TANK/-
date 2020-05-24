@@ -1,5 +1,3 @@
-var config = require('../../config/config');
-
 Page({
   /**
    * 页面的初始数据
@@ -36,15 +34,10 @@ Page({
     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcjfJZtjXRhcMMD.jpg",
      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcjfJvkhvCaF7dB.jpg",
      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcjfJJ55MTTqh1s.jpg",
-     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcjfJaLY85Wb8Yv.jpg",
-
-     
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcjfJaLY85Wb8Yv.jpg",    
     ]
   },
- 
- 
- 
- 
+
   preview(event) {
     console.log(event.currentTarget.dataset.src)
     let currentUrl = event.currentTarget.dataset.src
@@ -113,14 +106,4 @@ Page({
       imageUrl: "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jYTYCvcv5eWRkrz.jpg"
     };
   },
-
-  updatenavs: function(t) { 
-    this.setData({ 
-        current: t.target.dataset.index, 
-    }); 
-}, 
-
-catchTouchMove:function(res){
-  return false
-},
 })

@@ -9,6 +9,11 @@ height: 100%;
 justify-content: center;
 align-items:center;
 }
+
+.imagesize image { 
+  width:100%;
+}
+
 .wxParse{
   padding: 20rpx;
 }
@@ -49,11 +54,22 @@ align-items:center;
   position: relative;
 }
 
+.container-logo {
+  height: 250rpx;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
 .intro{
   height: 100%;
 }
 
 .sence{
+  height: 100%;
+}
+
+.history{
   height: 100%;
 }
 
@@ -78,10 +94,16 @@ align-items:center;
   line-height: 60rpx;
   font-size: 70rpx;
   color:#AE0009;
+}
+
+.intro-title-text-center {
+  padding: 54rpx 0;
+  line-height: 60rpx;
+  font-size: 70rpx;
+  color:#AE0009;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .intro-english-text {
@@ -107,7 +129,7 @@ align-items:center;
 }
 
 .NN{
-  margin-top: 150rpx;
+  margin-top: 50rpx;
 }
 
 .WZ{
