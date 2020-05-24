@@ -1,1 +1,63 @@
 /* pages/schoolbus/schoolbus.wxss */
+.bg1{
+    width: 100%;
+    height: auto;
+    top: 0rpx;
+    bottom: 0rpx;
+    left: 0;
+    right: 0;
+    background: url('https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcWQZ4d528Qd7f9.png');
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -100；
+}
+
+.container_bus {
+    width: 90%;
+    text-align: center;
+    background:rgb(255, 255, 255);
+    box-shadow: 0 6rpx 10rpx 2rpx #bbb;
+    padding-top: 50rpx;
+    padding-bottom: 10rpx;
+    margin: 50rpx auto;
+    position: relative;
+    border-radius: 20rpx;
+}
+
+
+.title {
+    width: 250rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #fff;
+    background: #C8141F;
+    margin: 20rpx auto 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bus {
+    width: 660rpx;
+    height: 500rpx;
+    margin: 10rpx auto 25rpx;
+}
+
+.info {
+    width: 600rpx;
+    line-height: 50rpx;
+    font-size: 25rpx;
+    font-family: 'YouYuan';
+    text-align: left;
+    margin: 3rpx auto;
+    display: flex;
+    align-items: center;
+}
+
+.go-station {
+    width: 35rpx;
+    height: 35rpx;
+    line-height: 50rpx;
+    margin-left: 20rpx;
+    display: inline-block;
+}

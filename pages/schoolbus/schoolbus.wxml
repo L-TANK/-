@@ -1,2 +1,14 @@
 <!--pages/schoolbus/schoolbus.wxml-->
-<text>pages/schoolbus/schoolbus.wxml</text>
+ <view class="bg1"></view>
+
+  <view class="container_bus">
+    <view class="title">校车时刻表</view>
+      <image class="bus" src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcluxJKGUSJy4Ap.png"></image>
+        <view class="infos_container">
+          <view class="info">TIPS：</view>
+          <view class="info">1、校车载客方式为“招手即停”，一般没固定的路线，线路以主干道和同学们的目的地为参考。</view>
+          <view class="info">2、付款方式包括直接投币和扫车上二维码付款两种。</view>
+          <view class="info">3、南大门最新上车点位于商学院前的交叉路口。<image src="../../resource/icon/r.png" class="go-station" bindtap="openLocation"></image></view>
+          <view class="info">4、东门上车点位于东1栋宿舍前。<image src="../../resource/icon/r.png" class="go-station" bindtap="openLocation1"></image></view>
+        </view>
+  </view>

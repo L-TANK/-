@@ -1,1 +1,128 @@
 /* pages/photo/photo.wxss */
+/*bg1底色*/
+.bg1{
+    width: 100%;
+    height: auto;
+    top: 0rpx;
+    bottom: 0rpx;
+    left: 0;
+    right: 0;
+    background: url('https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcWQZ4d528Qd7f9.png');
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: -100；
+}
+
+/*竖向滚动容器*/
+.section {
+    text-align: center;
+    background-color: fff;
+    margin-top: 0rpx;
+}
+
+/*滑动容器*/
+.slide{
+ width: 100%;
+ height: 400rpx;
+  
+}
+
+/*滑动图片*/
+.slide-image{
+  width: 100%;
+  height:400rpx;
+}
+
+/*并排显示容器*/
+.scenerylist{
+  margin-top: 15rpx;
+}
+/*图片浮动形成并排显示*/
+.scenery-list-info{
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+/*图片样式*/
+.scenery-list-photo{
+  width: 350rpx;
+  height: 250rpx;
+}
+/*图片上文字*/
+.scenery-list-desc{
+  display: block;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  width: 94%;
+  text-align: center;
+  font-size: 25rpx;
+  padding: 10rpx;
+  opacity: 0.7;
+}
+
+/*推荐路线容器*/
+.container_word_photo {
+    width: 97%;
+    text-align: center;
+    background:rgb(255, 255, 255);
+    box-shadow: 0 10rpx 10rpx 10rpx #bbb;
+    padding-top: 50rpx;
+    padding-bottom: 10rpx;
+    margin: 15rpx auto;
+    position: relative;
+    border-radius: 10rpx;
+    z-index: -100;
+}
+
+/*文字：景点游玩路线*/
+.title {
+    width: 250rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #fff;
+    background: #55e1e3;
+    margin: 20rpx auto 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*做不出空行效果，用白色文字代替*/
+.title1 {
+    width: 250rpx;
+    height: 20rpx;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*路线*/
+.info {
+    width: 600rpx;
+    line-height: 50rpx;
+    text-indent: 2em;
+    font-size: 25rpx;
+    font-family: 'YouYuan';
+    text-align: left;
+    margin: 3rpx auto;
+    display: flex;
+    align-items: center;
+}
+
+/*游览须知*/
+.info1 {
+    width: 600rpx;
+    line-height: 50rpx;
+    font-size: 25rpx;
+    font-family: 'YouYuan';
+    text-align: left;
+    margin: 3rpx auto;
+    display: flex;
+    align-items: center;
+}

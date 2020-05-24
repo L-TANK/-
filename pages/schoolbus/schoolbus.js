@@ -8,6 +8,21 @@ Page({
 
   },
 
+  openLocation: function () {
+    wx.openLocation({
+      latitude: 22.834321,
+      longitude: 108.287414,
+      name: '南大门校车售票点'
+    })
+  },
+
+  openLocation1: function () {
+    wx.openLocation({
+      latitude: 22.843928,
+      longitude: 108.297866,
+      name: '东门候车点'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -61,6 +76,9 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+    return {
+      title: "畅行西大",
+      imageUrl: "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jYTYCvcv5eWRkrz.jpg"
+    };
   }
 })
