@@ -25,12 +25,35 @@
       </scroll-view>    
     </swiper-item>
 
-    <swiper-item class="history" hidden="{{current!=1}}">
+    <swiper-item class="history" hidden="{{current!=1}}"catchtouchmove='catchTouchMove'>
        <!--history页面元素--> 
-       <view>his</view>
+        <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+       <view class="intro-title-text">历史变革</view>
+     <image src="{{imgList[0]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[0]}}"> </image>
+           <view class="container">
+  <view class="flex-row">
+    <view class="flex-item">
+      <navigator url="/pages/WZ/WZ" hover-class="none">
+        <image class="WZ" src="/resource/images/WZ.png"></image>
+      </navigator>  
+    </view>
+    <view class="flex-item">
+      <navigator url="/pages/GL/GL" hover-class="none">
+        <image class="GL" src="/resource/images/GL.png"></image>
+      </navigator>  
+    </view>
+    <view class="flex-item">
+      <navigator url="/pages/NN/NN" hover-class="none">
+        <image class="NN" src="/resource/images/NN.png"></image>
+      </navigator>  
+    </view>
+  </view>
+</view>
+      </scroll-view>
+   
     </swiper-item>
 
-    <swiper-item class="scene" hidden="{{current!=2}}">
+    <swiper-item class="scene" hidden="{{current!=2}}"catchtouchmove='catchTouchMove'>
      <!--scene页面元素-->  
       <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
         <view class="intro-title-text">校园荷花池 </view>
@@ -46,7 +69,27 @@
       </scroll-view>
     </swiper-item>
 
-    <swiper-item class="logo" hidden="{{current!=3}}">
+    <swiper-item class="logo" hidden="{{current!=3}}"catchtouchmove='catchTouchMove'>
        <!--logo页面元素-->
+       <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+        <view class="intro-title-text">广西大学校训 </view>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jckCYhso8Mu6Lmg.jpg"></image>
+         <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+           <view class = "wxParse">
+              <template is = "wxParse" data = "{{wxParseData:xun.nodes}}" />
+            </view>
+          </view>
+        </view>
+        <view class="intro-title-text">广西大学校徽 </view>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jckCY578z2F36hp.jpg"></image>
+        <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+           <view class = "wxParse">
+              <template is = "wxParse" data = "{{wxParseData:hui.nodes}}" />
+            </view>
+          </view>
+        </view>
+      </scroll-view>
     </swiper-item>
 </swiper>

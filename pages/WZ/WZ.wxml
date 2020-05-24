@@ -1,0 +1,25 @@
+ 
+           <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+            <view class="intro-title-text">风雨历程-桂林时期</view>
+      <image src="{{imgList[6]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[6]}}"> </image>
+       <image src="{{imgList[7]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[7]}}"> </image>
+        <image src="{{imgList[8]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[8]}}"> </image>
+         <image src="{{imgList[9]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[9]}}"> </image>
+           <image src="{{imgList[10]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[10]}}"> </image>
+            <image src="{{imgList[11]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[11]}}"> </image>
+       <image src="{{imgList[12]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[12]}}"> </image>
+        <image src="{{imgList[13]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[13]}}"> </image>
+         <image src="{{imgList[14]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[14]}}"> </image>
+           <image src="{{imgList[15]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[15]}}"> </image>
+            <image src="{{imgList[16]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[16]}}"> </image>
+       <image src="{{imgList[17]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[17]}}"> </image>
+        <image src="{{imgList[18]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[18]}}"> </image>
+         <image src="{{imgList[19]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[19]}}"> </image>
+           <image src="{{imgList[20]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[20]}}"> </image>
+            <image src="{{imgList[21]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[21]}}"> </image>
+            <image src="{{imgList[22]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[22]}}"> </image>
+       <image src="{{imgList[23]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[23]}}"> </image>
+        <image src="{{imgList[24]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[24]}}"> </image>
+         <image src="{{imgList[25]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[25]}}"> </image>
+      </scroll-view>
+   

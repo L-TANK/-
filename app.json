@@ -8,7 +8,10 @@
     "pages/gonglv/gonglv",
     "pages/food/food",
     "pages/photo/photo",
-    "pages/schoolbus/schoolbus"
+    "pages/schoolbus/schoolbus",
+    "pages/GL/GL",
+    "pages/WZ/WZ",
+    "pages/NN/NN"
   ],
   "window": {
     "navigationBarBackgroundColor": "#C8141F",
