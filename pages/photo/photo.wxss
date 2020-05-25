@@ -84,7 +84,7 @@
     height: 50rpx;
     line-height: 50rpx;
     color: #fff;
-    background: #55e1e3;
+    background: #C8141F;
     margin: 20rpx auto 30rpx;
     display: flex;
     align-items: center;
