@@ -13,7 +13,7 @@
           <view class="intro-title-text">{{title}}</view>
         </view>
         <audio author="" bindtap="audioPlay" class="audio" id="myAudio" name="{{title}}" 
-        poster="{{detail_logo}}" src="{{audio}}" controls></audio>
+        poster="{{detail_logo}}" src="{{audio}}" controls hidden="{{audio==0}}"></audio>
         <view class = "wxParse">
           <template is = "wxParse" data = "{{wxParseData:description.nodes}}" />
         </view>
