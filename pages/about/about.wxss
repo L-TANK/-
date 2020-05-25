@@ -1,16 +1,82 @@
 /* pages/about/about.wxss */
-
-.slide{
-  width: 750rpx;
-  height: 500rpx; 
+@import "../../utils/wxParse/wxParse.wxss";
+page{
+  height:100%
+}
+.imagesize{
+display:flex;
+justify-content: center;
+align-items:center;
 }
 
-.slide-image{
-  width: 750rpx;
-  height: 500rpx;
+.imagesize image { 
+  width:100%;
 }
 
-.intro-title {
+.wxParse{
+  padding: 20rpx;
+}
+
+.navs_container {
+  width: 100%;
+  height: 100rpx;
+  bottom: 0;
+  text-align: center;
+  border-top: 1rpx solid #ddd;
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+}
+
+.nav {
+  width: 100rpx;
+  height: auto;
+  font-size: 14px;
+  line-height: 78rpx;
+  color: #000;
+  padding: auto;
+  margin: 12rpx 35rpx auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.intro_video {
+  height: 310rpx;
+  width: 100%;
+  border-radius: 21rpx;
+}
+
+.container {
+  height: 94%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.container-logo {
+  height: 250rpx;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.intro{
+  height: 100%;
+}
+
+.sence{
+  height: 100%;
+}
+
+.history{
+  height: 100%;
+}
+
+.article {
+  height: 100%;
+}
+
+.intro-main {
   position: relative;
 }
 
@@ -22,20 +88,21 @@
   padding: 0 40rpx;
 }
 
-.intro-title-logo {
-  position: absolute;
-  z-index: 100;
-  right: 0;
-  bottom: 52%;
-  width: 160rpx;
-  height: 160rpx;
-}
-
 .intro-title-text {
   padding: 54rpx 0;
   line-height: 60rpx;
   font-size: 70rpx;
   color:#AE0009;
+}
+
+.intro-title-text-center {
+  padding: 54rpx 0;
+  line-height: 60rpx;
+  font-size: 70rpx;
+  color:#AE0009;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-english-text {
@@ -44,12 +111,32 @@
   font-weight: normal;
   color:#AE0009;
 }
-
-.intro-main {
-  padding: 40rpx 0;
-  line-height: 48rpx;
-  font-size: 30rpx;
-  font-weight: 300;
-  color: #464645;
-  text-align: justify;
+.flex-row{
+  display: flex;
+  flex-direction:row ;
+  justify-content:space-between;
 }
+
+.flex-item{
+  width: 100%;
+  text-align: center;
+}
+
+.NN,.GL,.WZ{
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.NN{
+  margin-top: 50rpx;
+}
+
+.WZ{
+  margin-top: 50rpx;
+}
+
+
+.GL{
+  margin-top: 50rpx;
+}
+

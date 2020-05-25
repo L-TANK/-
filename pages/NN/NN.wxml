@@ -1,0 +1,98 @@
+ 
+     <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+     <view class="intro-title-text">风雨历程-南宁时期</view>     
+   
+           <view class='imagesize'>
+      <image src="{{imgList[0]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[0]}}"> </image>
+     </view>
+           <view class='imagesize'>
+      <image src="{{imgList[1]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[1]}}"> </image>
+     </view>
+           <view class='imagesize'>
+       <image src="{{imgList[2]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[2]}}"> </image>
+        </view>
+           <view class='imagesize'>
+        <image src="{{imgList[3]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[3]}}"> </image>
+         </view>
+           <view class='imagesize'>
+         <image src="{{imgList[4]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[4]}}"> </image>
+          </view>
+           <view class='imagesize'>
+           <image src="{{imgList[5]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[5]}}"> </image>
+            </view>
+           <view class='imagesize'>
+            <image src="{{imgList[6]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[6]}}"> </image>
+             </view>
+           <view class='imagesize'>
+       <image src="{{imgList[7]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[7]}}"> </image>
+        </view>
+           <view class='imagesize'>
+        <image src="{{imgList[8]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[8]}}"> </image>
+         </view>
+           <view class='imagesize'>
+         <image src="{{imgList[9]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[9]}}"> </image>
+          </view>
+           <view class='imagesize'>
+           <image src="{{imgList[10]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[10]}}"> </image>
+            </view>
+           <view class='imagesize'>
+            <image src="{{imgList[11]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[11]}}"> </image>
+             </view>
+           <view class='imagesize'>
+       <image src="{{imgList[12]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[12]}}"> </image>
+        </view>
+           <view class='imagesize'>
+        <image src="{{imgList[13]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[13]}}"> </image>
+         </view>
+           <view class='imagesize'>
+         <image src="{{imgList[14]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[14]}}"> </image>
+          </view>
+           <view class='imagesize'>
+           <image src="{{imgList[15]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[15]}}"> </image>
+            </view>
+           <view class='imagesize'>
+            <image src="{{imgList[16]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[16]}}"> </image>
+             </view>
+           <view class='imagesize'>
+       <image src="{{imgList[17]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[17]}}"> </image>
+        </view>
+           <view class='imagesize'>
+        <image src="{{imgList[18]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[18]}}"> </image>
+         </view>
+           <view class='imagesize'>
+         <image src="{{imgList[19]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[19]}}"> </image>
+          </view>
+           <view class='imagesize'>
+           <image src="{{imgList[20]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[20]}}"> </image>
+            </view>
+           <view class='imagesize'>
+            <image src="{{imgList[21]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[21]}}"> </image>
+             </view>
+           <view class='imagesize'>
+       <image src="{{imgList[22]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[22]}}"> </image>
+        </view>
+           <view class='imagesize'>
+        <image src="{{imgList[23]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[23]}}"> </image>
+         </view>
+           <view class='imagesize'>
+         <image src="{{imgList[24]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[24]}}"> </image>
+          </view>
+           <view class='imagesize'>
+           <image src="{{imgList[25]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[25]}}"> </image>
+            </view>
+           <view class='imagesize'>
+            <image src="{{imgList[26]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[26]}}"> </image>
+             </view>
+           <view class='imagesize'>
+       <image src="{{imgList[27]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[27]}}"> </image>
+        </view>
+           <view class='imagesize'>
+        <image src="{{imgList[28]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[28]}}"> </image>
+         </view>
+           <view class='imagesize'>
+         <image src="{{imgList[29]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[29]}}"> </image>
+          </view>
+           <view class='imagesize'>
+           <image src="{{imgList[30]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[30]}}"> </image>
+            </view>
+      </scroll-view>

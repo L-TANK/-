@@ -1,21 +1,132 @@
 <!--pages/about/about.wxml-->
-<view class="intro">
-    <swiper class="slide" indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}">
-        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
-          <image src="/resource/images/{{item}}" class="slide-image" />
-        </swiper-item>
-    </swiper>
-    <image src="/resource/images/map.png" class="intro-title-logo" bindtap="goToMap"></image> 
-    <view class="intro-info padding-leftRight">
-        <view class="intro-title">
-          <view class="intro-title-text">中北大学简介</view>
-          <view class="intro-english-text">North University of China</view>
-        </view>
-        <view class="intro-main">
-            中北大学是一所由山西省人民政府与国家国防科技工业局共建、山西省人民政府管理的多科性教学研究型大学。学校的前身是1941年八路军总司令部在太行抗日根据地创办的我党我军第一所兵工学校——太行工业学校，历经太原机械学院、华北工学院，2004年6月经教育部批准更名为中北大学。
+<import src = "../../utils/wxParse/wxParse.wxml" />
 
-中北大学位于中国历史文化名城——山西省太原市，并在朔州市设有校区。学校总占地2758亩，建筑面积近101万平方米，固定资产总值近22.7亿元，教学科研仪器设备总值7亿元，可利用中外文图书资源360万册，拥有完善的教学和公共服务设施。
-        </view>
-    </view>
+<view class="navs_container">
+    <view bindtap="updatenavs" class="nav" data-index="{{index}}" style="{{current==index?'border-bottom: 4px solid #FF0000;':''}}" wx:for="{{navInfo}}">
+    {{item}}
+  </view>
 </view>
+<swiper bindchange="onSlideChangeEnd" class="container" current="{{current}}" style="height: {{windowH-5}}px;">
+
+    <swiper-item class="intro" hidden="{{current!=0}}" catchtouchmove='catchTouchMove'>
+    <!--intro页面元素-->
+      <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+        <video controls class="intro_video" src="{{introvideo}}" object-fit='cover' poster="{{video_img}}"></video>
+        <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+            <view class="intro-title-text">{{schoolName}}简介</view>
+            <view class="intro-english-text">{{englishName}}</view>
+            <audio author="" bindtap="audioPlay" class="audio" id="myAudio" name="{{schoolName}}" 
+        poster="{{logo}}" src="{{audio}}" controls></audio>
+            <view class = "wxParse">
+              <template is = "wxParse" data = "{{wxParseData:about.nodes}}" />
+            </view>
+          </view>
+        </view>
+      </scroll-view>    
+    </swiper-item>
+
+    <swiper-item class="history" hidden="{{current!=1}}"catchtouchmove='catchTouchMove'>
+       <!--history页面元素--> 
+      <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+        <view class="intro-title-text-center">历史沿革</view>       
+        <view class='imagesize'>
+          <image src="{{imgList[0]}}" class='in-image' mode='widthFix' bindtap="preview" data-src="{{imgList[0]}}"> </image>
+        </view>
+        <view class="intro-title-text-center">风雨历程</view>
+        <view class="container-logo">
+          <view class="flex-row">
+            <view class="flex-item">
+              <navigator url="/pages/WZ/WZ" hover-class="none">
+                <image class="WZ" src="/resource/images/wz.png"></image>
+              </navigator>  
+            </view>
+
+            <view class="flex-item">
+              <navigator url="/pages/GL/GL" hover-class="none">
+                <image class="GL" src="/resource/images/gl.png"></image>
+              </navigator>  
+            </view>
+
+            <view class="flex-item">
+              <navigator url="/pages/NN/NN" hover-class="none">
+                <image class="NN" src="/resource/images/nn.png"></image>
+              </navigator>  
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item class="scene" hidden="{{current!=2}}"catchtouchmove='catchTouchMove'>
+     <!--scene页面元素-->  
+      <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+        <view class="intro-title-text-center">校园荷花池 </view>
+           <view class='imagesize'>
+              <image src="{{sceneList[0]}}" class='in-image' mode='widthFix'bindtap="preview2" data-src="{{sceneList[0]}}"> </image>
+            </view>
+
+        <view class="intro-title-text-center">马君武校长 </view>
+           <view class='imagesize'>
+              <image src="{{sceneList[1]}}" class='in-image' mode='widthFix'bindtap="preview2" data-src="{{sceneList[1]}}"> </image>
+            </view>
+        <view class="intro-title-text-center">校园古树 </view>
+            <view class='imagesize'>
+              <image src="{{sceneList[2]}}" class='in-image' mode='widthFix'bindtap="preview2" data-src="{{sceneList[2]}}"> </image>
+            </view>
+        <view class="intro-title-text-center">夕阳小道</view>
+           <view class='imagesize'>
+              <image src="{{sceneList[3]}}" class='in-image' mode='widthFix'bindtap="preview2" data-src="{{sceneList[3]}}"> </image>
+            </view>
+        <view class="intro-title-text-center">小荷才露尖尖角</view>
+          <view class='imagesize'>
+              <image src="{{sceneList[4]}}" class='in-image' mode='widthFix'bindtap="preview2" data-src="{{sceneList[4]}}"> </image>
+            </view>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item class="logo" hidden="{{current!=3}}"catchtouchmove='catchTouchMove'>
+       <!--logo页面元素-->
+       <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
+        <view class="intro-title-text-center">广西大学校训 </view>
+        <view class='imagesize'>
+          <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jckCYhso8Mu6Lmg.jpg" class='in-image' mode='widthFix'></image>
+         </view>
+         <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+           <view class = "wxParse">
+              <template is = "wxParse" data = "{{wxParseData:xun.nodes}}" />
+            </view>
+          </view>
+        </view>
+        <view class="intro-title-text-center">广西大学校徽 </view>
+        <view class='imagesize'>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jckCY578z2F36hp.jpg" class='in-image' mode='widthFix'></image>
+         </view>
+        <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+           <view class = "wxParse">
+              <template is = "wxParse" data = "{{wxParseData:hui.nodes}}" />
+            </view>
+          </view>
+        </view>
+        <view class="intro-title-text-center">广西大学校歌 </view>
+        <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+            <audio author="" bindtap="audioPlay" class="audio" id="myAudio" name="广西大学校歌" 
+            poster="{{logo}}" src="{{song}}" controls></audio>
+          </view>
+        </view>
+        <view class='imagesize'>
+         <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jckCYbhmKrfwYfO.jpg" class='in-image' mode='widthFix'></image>
+          </view>
+         <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+           <view class = "wxParse">
+              <template is = "wxParse" data = "{{wxParseData:ge.nodes}}" />
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+</swiper>
