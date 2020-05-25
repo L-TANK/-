@@ -1,6 +1,6 @@
 <!--pages/photo/photo.wxml-->
 <!--<view class="bg1"></view>-->
- <view class="bg1"></view>
+
 <scroll-view class="section" scrollY="true" style="width=100%,height:100vh ;">
   <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
     <swiper-item wx:for="{{imgUrls}}" wx:key="true">

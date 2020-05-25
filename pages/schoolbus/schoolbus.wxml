@@ -1,5 +1,6 @@
 <!--pages/schoolbus/schoolbus.wxml-->
- <view class="bg1"></view>
+<!--<view class="bg1"></view>-->
+
 
   <view class="container_bus">
     <view class="title">校车时刻表</view>
