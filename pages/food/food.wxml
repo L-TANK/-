@@ -4,7 +4,7 @@
 <scroll-view class="section" scrollY="true" style="width=100%,height:100vh ;">
 
 <!-------------------秀苑------------------------>
-  <view class="container_xiuyuan">
+  <view class="container_st">
     <view class="header">
       <image class="header_bowl" src="/resource/images/bowl.png"></image>
     </view>
@@ -14,7 +14,7 @@
           <image src="{{item}}" class="slide-image" />
         </swiper-item>
       </swiper>
-    <image src="../../resource/icon/r.png" class="intro-stx-logo" bindtap="openLocation"></image>
+    <image src="../../resource/icon/r.png" class="intro-st-logo" bindtap="openLocation"></image>
     <view class="detail">
       秀苑餐厅位于新东园。该餐厅共有两层楼，一楼是大众食堂，主营是快餐、粉面、粥。二楼是自助餐厅，环境舒适优雅。主要菜肴有小炒、大众美食、粉面粥等，除此之外还提供水果、果汁、杂粮粥。秀苑二楼餐厅相对于翠苑二楼餐厅菜品更丰富亲民，自然价格也经济实惠。
     </view>
@@ -22,14 +22,14 @@
   </view>
 
 <!-------------------南苑------------------------>
-  <view class="container_nanyuan">
+  <view class="container_st">
     <view class="title">南苑</view>
       <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
         <swiper-item wx:for="{{imgUrls2}}" wx:key="true">
           <image src="{{item}}" class="slide-image" />
         </swiper-item>
       </swiper>
-      <image src="../../resource/icon/r.png" class="intro-stn-logo" bindtap="openLocation1"></image>
+      <image src="../../resource/icon/r.png" class="intro-st-logo" bindtap="openLocation1"></image>
     <view class="detail">
      南苑餐厅位于西校园南苑路，是学生宿舍的中心地带。该餐厅共有两层楼，一楼是大伙食堂，总就餐面积约1000平方米，大概可以容纳800多人就餐。它的主要菜肴有风味小炒和凉拌菜。食堂二楼内设有空调，环境优雅舒适。它的主要经营有：小炒、粉面粥、大众美食、滋补炖品、风味小吃、甜品面点等等。
     </view>
@@ -37,14 +37,14 @@
   </view>
 
 <!-------------------东苑------------------------>
-  <view class="container_nanyuan">
+  <view class="container_st">
     <view class="title">东苑</view>
       <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
         <swiper-item wx:for="{{imgUrls3}}" wx:key="true">
           <image src="{{item}}" class="slide-image" />
         </swiper-item>
       </swiper>
-       <image src="../../resource/icon/r.png" class="intro-std-logo" bindtap="openLocation2"></image>
+       <image src="../../resource/icon/r.png" class="intro-st-logo" bindtap="openLocation2"></image>
     <view class="detail">
      东苑餐厅坐落于图书馆附近，经营面积为两层，它菜色丰富，从南到北应有尽有，室内空调开放。一楼是自选快餐，二楼有大厅和包厢，有快餐、套餐、米粉、炒粉供应，也可以点菜，冬天还可以下火锅。
     </view>
@@ -52,14 +52,14 @@
   </view>
 
 <!-------------------翠苑------------------------>
-  <view class="container_nanyuan">
+  <view class="container_st">
     <view class="title">萃苑</view>
       <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
         <swiper-item wx:for="{{imgUrls4}}" wx:key="true">
           <image src="{{item}}" class="slide-image" />
         </swiper-item>
       </swiper>
-       <image src="../../resource/icon/r.png" class="intro-stc-logo" bindtap="openLocation3"></image>
+       <image src="../../resource/icon/r.png" class="intro-st-logo" bindtap="openLocation3"></image>
     <view class="detail">
      萃苑餐厅因位于博萃湖和博萃楼附近而命名，分有一二层，内设空调和包间，是宴请宾客、招待朋友的好去处。一二楼同为自选餐厅，二楼按千克计重，价格较贵，相对于高级一些。
     </view>
@@ -68,14 +68,14 @@
 
 
 <!-------------------碧湖苑------------------------>
-  <view class="container_nanyuan">
+  <view class="container_st">
     <view class="title">碧湖苑</view>
       <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
         <swiper-item wx:for="{{imgUrls5}}" wx:key="true">
           <image src="{{item}}" class="slide-image" />
         </swiper-item>
       </swiper>
-       <image src="../../resource/icon/r.png" class="intro-stb-logo" bindtap="openLocation4"></image>
+       <image src="../../resource/icon/r.png" class="intro-st-logo" bindtap="openLocation4"></image>
     <view class="detail">
      碧湖苑餐厅位于碧云湖旁，作为最美景观食堂，它是在东区上课生活的同学最爱去的食堂，主营大众菜。
     </view>
