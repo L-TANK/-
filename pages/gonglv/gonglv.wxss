@@ -1,7 +1,16 @@
 /* pages/gonglv/gonglv.wxss */
-.bg {
+
+/*背景*/
+.bg1{
+    width: 100%;
+    height: auto;
+    top: 0rpx;
+    bottom: 0rpx;
+    left: 0;
+    right: 0;
+    background: url('https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcWQZ4d528Qd7f9.png');
+    background-size: 100% 100%;
     position: fixed;
-    z-index: -1;
 }
 
 .container {
@@ -9,7 +18,7 @@
     height: 100%;
     background-size: 100% 100%;
     text-align: center;
-    padding-top: 20rpx;
+    padding-top: 30rpx;
     margin: auto;
     position: absolute;
 }
@@ -66,14 +75,3 @@
     line-height: 35rpx;
 }
 
-.box {
-    margin: 20rpx;
-}
-
-.box view.cu-bar {
-    margin-top: 20rpx;
-}
-
-.icon-back,.icon-homefill,.content {
-    color: white;
-}

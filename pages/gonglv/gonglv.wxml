@@ -1,34 +1,34 @@
 <!--pages/gonglv/gonglv.wxml-->
-
+<!--<view class="bg1"></view>-->
 
 <view class="container">
 
     <navigator class="btn-container" url="/pages/food/food">
         <view class="nav_img_container">
-            <image class="nav_img" src="/resource/images/food.jpg"></image>
+            <image class="nav_img" src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZY2M0cXmcatBH4.jpg"></image>
         </view>
         <view class="nav_title_container">
-            <view class="nav_title">品·西大美食</view>
+            <view class="nav_title">校园美食</view>
         </view>
     </navigator>
 
 
     <navigator class="btn-container" url="/pages/photo/photo">
         <view class="nav_title_container">
-            <view class="nav_title nav_title__right">拍·最美瞬间</view>
+            <view class="nav_title nav_title__right">校园景观</view>
         </view>
         <view class="nav_img_container">
-            <image class="nav_img" src="/resource/images/photo.jpg"></image>
+            <image class="nav_img" src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZY2MeHW0SzIq65.jpg"></image>
         </view>
     </navigator>
 
 
     <navigator class="btn-container" url="/pages/schoolbus/schoolbus">
         <view class="nav_img_container">
-            <image class="nav_img" src="/resource/images/schoolbus.jpg"></image>
+            <image class="nav_img" src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZY2Mw2kCgXvEQP.jpg"></image>
         </view>
         <view class="nav_title_container">
-            <view class="nav_title">校车查询</view>
+            <view class="nav_title">校园交通</view>
         </view>
     </navigator>
 </view>

@@ -6,11 +6,13 @@
     bottom: 0rpx;
     left: 0;
     right: 0;
-    background: url('https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZ4YmhTtChVG6dv.png');
+    background: url('https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZd5FPIUwgNWJDd.png');
     background-size: 100% 100%;
     position: fixed;
     z-index: -666;
 }
+
+
 
 .section {
     text-align: center;
@@ -18,15 +20,17 @@
     margin-top: 30rpx;
 }
 
-.container_xiuyuan {
+.container_xiuyuan,.container_nanyuan {
     width: 90%;
     text-align: center;
-    background:#0000;
+    background:rgb(255, 255, 255);
+    box-shadow: 0 6rpx 10rpx 2rpx #bbb;
     padding-top: 50rpx;
     padding-bottom: 10rpx;
     margin: 50rpx auto;
     position: relative;
     border-radius: 20rpx;
+    
 }
 
 .container_xiuyuan {
@@ -95,13 +99,51 @@
     text-align:justify ;
 }
 
+.intro-stx-logo {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  bottom: 37%;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.intro-stn-logo {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  bottom: 36%;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.intro-std-logo{
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  bottom: 34%;
+  width: 80rpx;
+  height: 80rpx;
+}
 
 
+.intro-stc-logo{
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  bottom: 34%;
+  width: 80rpx;
+  height: 80rpx;
+}
 
-
-
-
-
+.intro-stb-logo{
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  bottom: 27%;
+  width: 80rpx;
+  height: 80rpx;
+}
 
 
 

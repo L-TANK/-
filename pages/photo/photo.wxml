@@ -1,2 +1,41 @@
 <!--pages/photo/photo.wxml-->
-<text>pages/photo/photo.wxml</text>
+<!--<view class="bg1"></view>-->
+ <view class="bg1"></view>
+<scroll-view class="section" scrollY="true" style="width=100%,height:100vh ;">
+  <swiper class="slide" indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </swiper>
+
+<!--图片并列显示 -->
+<view class="scenerylist">
+  <block wx:for="{{items}}" wx:key="item">
+    <view class="scenery-list">
+        <view class="scenery-list-info" index="{{index}}">
+          <image class="scenery-list-photo" src="{{item.imageUrl}}" bindtap='previewImg'data-index='{{index}}'/>
+          <text class="scenery-list-desc">{{item.content}}</text>
+        </view>
+    </view>
+  </block>
+</view>
+
+<!--title1是空行... -->
+  
+  <view class="title1">.....</view>
+  <view class="title">游览路线推荐</view>
+  <text class="info1"space="ensp">①  南大门—>综合实验大楼—>大礼堂—>镜湖&鉴湖—>汇学堂—>综合体育馆—>图书馆—>时光广场—>碧云湖—>东体育场—>东门</text>
+  <text class="info1"space="ensp">②  南大门—>综合实验大楼—>萃湖&镜湖—>爱莲湖&彩蝶湖—>西体育场—>劝学岛—>紫荆湖—>碧云湖—>东体育场—>东门</text>
+  <text class="info1"space="ensp">③  南大门—>综合实验大楼—>莲湖&荷湖—>汇学广场—>时光广场—>劝学岛—>紫荆湖—>碧云湖—>东体育场—>东门</text>
+  <view class="title1">.....</view>
+  <view class="title">游览须知</view>
+  <text class="info1"space="ensp">1.  广西大学为教学科研单位，不以任何理由向入校/在校参观人员收取费用。</text>
+  <text class="info1"space="ensp">2.  参观时要自觉保护校内设施；爱护校园花草树木，不踩踏、不攀折、不涂鸦、不刻画；爱护校园环境，禁止随地吐痰和丢弃各种废弃物。</text>
+  <text class="info1"space="ensp">3.  校内禁止使用各类扩音设备，禁止喧哗。</text>
+  <text class="info1"space="ensp">4.  参观人员要自觉维护校园交通秩序，遵守交通规则。</text>
+  <view class="title1">.....</view>
+
+
+
+
+</scroll-view>
