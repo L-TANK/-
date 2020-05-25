@@ -62,15 +62,27 @@
      <!--scene页面元素-->  
       <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
         <view class="intro-title-text-center">校园荷花池 </view>
+           <view class='imagesize'>
         <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5yJzfN2DoqD.jpg"></image>
+           </view>
+
         <view class="intro-title-text-center">马君武校长 </view>
+
+           <view class='imagesize'>
         <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu558ivI9IhnH.jpg"></image>
+           </view>
         <view class="intro-title-text-center">校园古树 </view>
+            <view class='imagesize'>
         <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5zgLmPc9aZs.jpg"></image> 
-        <view class="intro-title-text-center">夕阳湖心岛 </view>
-        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5SamK4PG0iM.jpg"></image>  
+           </view>
+        <view class="intro-title-text-center">夕阳 </view>
+           <view class='imagesize'>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jd6L6d8YH6jrMBG.jpg"></image>  
+           </view>
         <view class="intro-title-text-center">小荷才露尖尖角</view>
-        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5n7OOAmzkz7.jpg"></image>
+          <view class='imagesize'>
+        <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jd6L6xmHSXnW00F.jpg"></image>
+          </view>
       </scroll-view>
     </swiper-item>
 
@@ -102,7 +114,14 @@
             poster="{{logo}}" src="{{song}}" controls></audio>
           </view>
         </view>
-            <!--这里加上图片和文字-->
+         <image src="https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jckCYbhmKrfwYfO.jpg"></image>
+         <view class="intro-info padding-leftRight">
+          <view class="intro-main">
+           <view class = "wxParse">
+              <template is = "wxParse" data = "{{wxParseData:ge.nodes}}" />
+            </view>
+          </view>
+        </view>
       </scroll-view>
     </swiper-item>
 </swiper>

@@ -22,6 +22,7 @@ Page({
     xun:'',
     hui:'',
     song:'',
+    ge:'',
     imgList: [
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZqteRMtHNpSzcT.jpg",  
     ]
@@ -54,11 +55,13 @@ Page({
           video_img:res.data.video_img,
           xun:res.data.xun,
           hui:res.data.hui,
-          song:res.data.song
+          song:res.data.song,
+          ge:res.data.ge
         }) 
       WxParse.wxParse('about','html',res.data.about,this)  
       WxParse.wxParse('xun','html',res.data.xun,this) 
       WxParse.wxParse('hui','html',res.data.hui,this) 
+      WxParse.wxParse('ge','html',res.data.ge,this) 
       }, 
       fail: () =>{ 
         // 操作school表 
@@ -78,11 +81,13 @@ Page({
             video_img:res.data.video_img,
             xun:res.data.xun,
             hui:res.data.hui,
-            song:res.data.song
+            song:res.data.song,
+            ge:res.data.ge
           }) 
           WxParse.wxParse('about','html',res.data.about,this) 
           WxParse.wxParse('xun','html',res.data.xun,this) 
           WxParse.wxParse('hui','html',res.data.hui,this) 
+          WxParse.wxParse('ge','html',res.data.ge,this) 
           //将校园简介数据进行本地缓存 
           wx.setStorage({ 
             key: "schoolData", 
