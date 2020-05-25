@@ -28,7 +28,7 @@ Page({
     ],
     sceneList:[
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5yJzfN2DoqD.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu558ivI9IhnH.jpg",
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jdBY8VMQpWDPAGe.jpg",
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZpu5zgLmPc9aZs.jpg",
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jd6L6d8YH6jrMBG.jpg",
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jd6L6xmHSXnW00F.jpg"
