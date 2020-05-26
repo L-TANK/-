@@ -108,7 +108,7 @@ Page({
     let Search = new wx.BaaS.TableObject(tableId)
     let query = new wx.BaaS.Query()
     query.contains('title', Input)
-    Search.setQuery(query).find().then(res => cb(res), err => {
+    Search.setQuery(query).limit(50).find().then(res => cb(res), err => {
       // err
     })
  },

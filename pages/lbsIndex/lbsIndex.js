@@ -59,7 +59,7 @@ Page({
      let Map = new wx.BaaS.TableObject(tableId)
      let query = new wx.BaaS.Query()
      query.in('category', [name])
-     Map.setQuery(query).find().then(res => cb(res), err => {
+     Map.setQuery(query).limit(30).find().then(res => cb(res), err => {
        // err
      })
   },
