@@ -5,9 +5,9 @@ Page({
   data: {
    
     imgList: [
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwv1LEbcNq5kl.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwvdepRb3mCfs.jpg",
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwv1LEbcNq5kl.jpg", 
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwvOqgwHBhMzy.jpg",
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwvdepRb3mCfs.jpg",
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwv1wK2W15Nda.jpg",
       "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwvzReuJiOO9n.jpg",  
     ]
