@@ -11,7 +11,12 @@
     <swiper-item class="intro" hidden="{{current!=0}}" catchtouchmove='catchTouchMove'>
     <!--intro页面元素-->
       <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
-        <video controls class="intro_video" src="{{introvideo}}" object-fit='cover' poster="{{video_img}}"></video>
+        <swiper class="slide" indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}">
+        <swiper-item wx:for="{{imgUrls}}" wx:key="true">
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </swiper>
         <view class="intro-info padding-leftRight">
           <view class="intro-main">
             <view class="intro-title-text">{{schoolName}}简介</view>
