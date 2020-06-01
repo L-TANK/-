@@ -5,36 +5,28 @@ Page({
   data: {
    
     imgList: [
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZqteRMtHNpSzcT.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5J3WKt3xxzwi.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5JI9VUZA9ry2.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5JPhEbvhh3gh.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5JHZ4Qy1Umb8.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5KrzvZSBOUB5.jpg",/**
-      *0-5
-      */
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZPm5L2vopbo.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZl24leCc7Rd.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZK1iJkDQDCR.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZ4HpucUuW9R.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZ0lSx5sFIGP.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZyBHAZXjW1V.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZ2W8gtkIARV.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZDGq8ykaDFD.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZDGq8ykaDFD.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZoH4nnjK7RH.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZ7rhbglcATh.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZJ2aNpTry02.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZTGCimFlKrO.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZV7BqIsgpou.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZarcfD7lXkN.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZ3AZfMjutqm.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZCwL4em1K9y.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZpgdy6Ilp2L.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcUEZaNW6zvAM0K.jpg",
-      /**
-      *6-25
-      */
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx95g03YbBwge.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9XGxUw8mMWn.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx95SolqJ1lu2.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9PQcuIvixrL.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9BJITnbuFqc.jpg",
+
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9GuaNuRHGgQ.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9dLxG3jwtSp.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9hjS9bmvbGC.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx982Ab9zXwmP.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9jL5WVzd7So.jpg",
+
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9ErcfvOZPMl.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9OoiAAnutWp.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9Gzti5NNwFE.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9HSod06RmpH.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9idQmlC5c62.jpg",
+
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9NHPicqbPZ8.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkx9ephfFuHRYt.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkxAiJW82kN6vA.jpg",
+     "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkxA95orSJTEj4.jpg",
     ]
   },
  

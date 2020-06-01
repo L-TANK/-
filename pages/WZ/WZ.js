@@ -5,12 +5,11 @@ Page({
   data: {
    
     imgList: [
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jZqteRMtHNpSzcT.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5J3WKt3xxzwi.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5JI9VUZA9ry2.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5JPhEbvhh3gh.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5JHZ4Qy1Umb8.jpg",
-      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jcU5KrzvZSBOUB5.jpg",  
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwv1LEbcNq5kl.jpg",
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwvdepRb3mCfs.jpg",
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwvOqgwHBhMzy.jpg",
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwv1wK2W15Nda.jpg",
+      "https://cloud-minapp-35144.cloud.ifanrusercontent.com/1jfkwvzReuJiOO9n.jpg",  
     ]
   },
 

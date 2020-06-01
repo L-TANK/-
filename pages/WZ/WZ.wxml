@@ -2,19 +2,19 @@
       <scroll-view class="article" scroll-y="true" style="height: {{windowH-6}}px;">
             <view class="intro-title-text">风雨历程-梧州时期</view>
             <view class='imagesize'>
+              <image src="{{imgList[0]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[0]}}"> </image>
+            </view>
+            <view class='imagesize'>
               <image src="{{imgList[1]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[1]}}"> </image>
             </view>
             <view class='imagesize'>
               <image src="{{imgList[2]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[2]}}"> </image>
             </view>
-            <view class='imagesize'>
+           <view class='imagesize'>
               <image src="{{imgList[3]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[3]}}"> </image>
             </view>
-           <view class='imagesize'>
-              <image src="{{imgList[4]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[4]}}"> </image>
-            </view>
             <view class='imagesize'>
-              <image src="{{imgList[5]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[5]}}"> </image>
+              <image src="{{imgList[4]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[4]}}"> </image>
             </view>     
       </scroll-view>
    

@@ -95,4 +95,10 @@
            <view class='imagesize'>
            <image src="{{imgList[30]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[30]}}"> </image>
             </view>
+             <view class='imagesize'>
+           <image src="{{imgList[31]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[31]}}"> </image>
+            </view>
+             <view class='imagesize'>
+           <image src="{{imgList[32]}}" class='in-image' mode='widthFix'bindtap="preview" data-src="{{imgList[32]}}"> </image>
+            </view>
       </scroll-view>
