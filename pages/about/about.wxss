@@ -148,6 +148,5 @@ align-items:center;
 .audio {
   margin: 0 10rpx 5rpx;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
 }
