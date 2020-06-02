@@ -2,6 +2,7 @@
 @import "../../utils/wxParse/wxParse.wxss";
 .wxParse{
   padding: 20rpx;
+  text-align:justify ;
 }
 
 .slide{
@@ -52,5 +53,8 @@
 
 .audio {
   margin: 0 10rpx 5rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
